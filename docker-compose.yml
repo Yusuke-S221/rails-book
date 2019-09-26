@@ -2,6 +2,9 @@ version: '3'
 services:
   db:
     image: mysql:5.7
+    volumes:
+      - "./mysql/init:/docker-entrypoint-initdb.d"
+      - "./mysql/data:/var/lib/mysql"
     environment:
       MYSQL_ROOT_PASSWORD: ysksy3610
       MYSQL_DATABASE: root
@@ -17,4 +20,3 @@ services:
       - "3000:3000"
     links:
       - db
-
