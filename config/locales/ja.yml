@@ -1,33 +1,17 @@
---2019-09-28 02:49:41--  https://raw.github.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml
-Resolving raw.github.com (raw.github.com)... 151.101.108.133
-Connecting to raw.github.com (raw.github.com)|151.101.108.133|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml [following]
---2019-09-28 02:49:41--  https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/ja.yml
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.108.133
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 5117 (5.0K) [text/plain]
-Saving to: 'ja.yml'
-
-     0K ....                                                  100%  836K=0.006s
-
-2019-09-28 02:49:41 (836 KB/s) - 'ja.yml' saved [5117/5117]
-
 ja:
-  activarecord:
+  activerecord:
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
-      models:
-        task: タスク
-      attributes:
-        task:
-        id: ID
-        name: 名称
-        description: 詳しい説明
-        created_at: 登録日時
-        update_at: 更新日時 
+    models:
+      task: タスク
+    attributes:
+      task:
+      id: ID
+      name: 名称
+      description: 詳しい説明
+      created_at: 登録日時
+      update_at: 更新日時
