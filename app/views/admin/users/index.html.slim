@@ -13,12 +13,12 @@ table.table.table-hover
       th= User.human_attribute_name(:updated_at)
       th
   tbody
-    - @users.each do |task|
+    - @users.each do |user|
       tr
         td= link_to user.name, [:admin, user]
         td= user.email
         td= user.admin? ? 'あり' : 'なし'
-        td= task.created_at
+        td= user.created_at
         td= user.updated_at
         td
           = link_to '編集', edit_admin_user_path(user), class: 'btn btn-primary mr-3'
