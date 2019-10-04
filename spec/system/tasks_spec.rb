@@ -9,8 +9,8 @@ describe 'タスク管理機能', type: :system do
     before do
       FactoryBot.create(:task, name: '最初のタスク', user: user_a)
       visit login_path
-      fill_in 'メールアドレス', with: 'login_user.email'
-      fill_in 'パスワード', with: 'login_user.password'
+      fill_in 'メールアドレス', with: login_user.email
+      fill_in 'パスワード', with: login_user.password
       click_button 'ログインする'
     end
 
